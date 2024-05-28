@@ -11,7 +11,7 @@ Main takeaways:
 2. Conduct research on the industry of repair and the indsutry of refill
 3. Stay in contact with the team on WhatsApp.
 
-28th May - Relevant documents in "project files" folder.
+28th May - Relevant document is "Project file (1)"
 Yesterday, we had another meeting on Google Meet where we all presented our findings and thoughts of the direction of the project. I presented my thoughts on the repair and refill industry, concluding that a couple good ideas I had were as such: 
 (1.) a forward predicting repair model and directory combined that works with the consumer and utilises companies like IFIXIT to keep the appliance working and sustainable. 
 (2.) a pricing and repair model to assess the most cost-effective and sometimes eco-friendly method to deal with a crashed/written-off car.
