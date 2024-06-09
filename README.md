@@ -1,5 +1,5 @@
 # VISA-Climate-Tech-Hackathon-2024
-The mission is to  revolutionize the use of payments data, to create groundbreaking solutions that drive  sustainable outcomes and enable consumers to make informed choices.
+The mission is to  revolutionize the use of payments data, to create groundbreaking solutions that drive  sustainable outcomes and enable consumers to make informed choices. Our idea is Airide, a chrome extension/app that allows people to hire local drivers to move 1 or 2 pieces of furniture (boot space permitting). This allows avoiding surcharges and minimum amounts that moving companies levy on the customers. The system would also priority rank more carbon efficient cars over less carbon efficient ones too.
 
 #progress log
 
