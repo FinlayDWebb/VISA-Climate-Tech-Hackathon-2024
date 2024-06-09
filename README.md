@@ -24,3 +24,22 @@ Main takeaways:
 3. Go over the Dataset they release and come up with observations, ideas or questions
 4. If possible, do some research into the Machine Learning/Data Science literature on your idea to get an idea of the technical steps involved
 
+Sunday 9th June - Uploaded DimensionFetcher.md to the repo
+I just got back from abroad, we have had two meetings (2nd and the 8th) and after pitching my idea for building a model to determine longevity of specific household appliances, we decided to go in a different direction. After some brainstorming on the 2nd of June, we decided to commit to the idea of a moving company prioritising the environment and ease of use. Almost like Uber for moving, there is a company that does this already named Dolly so to be careful in order to not repeat what is already been done, but we feel as though there isn't a market for small items. Dolly requires drivers with vans and usually involves moving the entire contents of a house. Our idea would involve moving, just one or two pieces of furniture and moving it with anybody with a car big enough. After deciding on this idea it was time to go away and find data and articles backing this up. I found 4 relevant datasets, 2 of which included car model/make and the dimensions of the boot, cargo space, etc. And the other 2 of which included emissions data for those cars. These would be incredibly useful as the idea would also to be rank priority to more fuel efficient cars for the 'movee', to really emphasise the climate consideration. 
+  We then met again on the 8th (yesterday) and decided that we need to hurry up our progress. We needed to focus on the presentation more than the product being 'perfect'. The tasks were delegated to each person, some front end and back end, some research, some presentation, some data scraping, etc. I was tasked with writing the presentation slides on the data scraping as I had been most successful with finding data up to that point. So we skip to today, and I wanted to find a way so that the driver could put in their car model and make, and a script would return the dimensions, so that the movee could match their requirements with a car big enough. This would involve first data scraping from sites with this information, and then building a script to calculate whether the movee's furniture would fit. Starting with the scraping data task:
+  I dont have much experience with Python so this was extremely challenging, I first watched multiple videos and read some articles about the package BeautifulSoup, deciding that it would be best to use this. I then layed out a plan for the script, it as such:
+      1. Create a function that would in turn create a URL possessing the data for the dimensions.
+      2. Define a function to scrape the boot dimensions from the constructed URL.
+      3. Define the main function that gets user input, constructs the URL, fetches the dimensions, and prints them.
+  Using StackOverflow, videos, articles and the Python OpenAI model, I was able to construct all three parts, with some tweaking to make sure it worked. One issue was the dashes in the car model, with the website that I used for the dimensions, "How Many Bags Fit", the url obviously turns Honda Accord Executive 2 into honda-accord-executive-2, so that was handled by prompting the driver to put their own dashes in. As well as running a make.lower.replace(" ", "-") in the construct URL branch to sort out the make input too. And this all worked. Next I have to tackle finding a way to check if furniture fits now.
+
+Main problem:
+I found it extremely hard to find and think of a way to scrape the dimensions of a car boot from the internet. Solution: searching over 10 websites to find data, and researching into BeautifulSoup to try and form a script. Outcome: utilised OpenAI, articles and videos to help me build a script that worked in scraping this data.
+
+Main takeaways:
+1. I successfully navigated building an initial data scraping script (with help from the internet)
+2. Continue to build a script that can check if furniture can fit in the back of a car. And share this script with Isha who is working on the back and front end.
+3. Put together multiple slides in the group's presentation going over data scraping, ahead of the next weekend.
+
+
+
