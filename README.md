@@ -57,5 +57,95 @@ Main takeaways:
 2. Continue to build a script that can check if furniture can fit in the back of a car. And share this script with Isha who is working on the back and front end.
 3. Put together multiple slides in the group's presentation going over data scraping, ahead of the next weekend.
 
+--------------------------------------------------------------------------------
+
+Sunday 16th June - Uploaded MinBoxBounding.md, FurnitureFitStep.md, FuelEmissionRanking.md
+
+A lot has happened since the last log, with the deadline steadily approaching there is an increase in the intensity of work with the project. Throughout last week I added lots to the PPTX, including multiple demo scripts and flowcharts to explain/pitch the idea to the viewer of the PPTX. This included details around how the app works, what inputs are needed from the consumer and the driver, and how the app could go about processing and utilising the data to ensure a swift and seamless process for both parties. A USP of our idea is the ease of use, so it is imperative that clunkiness is left out of it. I will upload the PPTX once I have finished it. Now to discuss the issues and how I resolved them as they cropped up:
+
+Problem 1: Furniture fitting imperfections
+  
+  In the previous log entry I outlined a process that scraped the dimensions of the driver's cargo space off a website online. This was
+  handy and solved the problem of requiring the driver to do that themselves. But, following that there was the problem of using that data
+  successfully. A big issue to consider is that the boot or cargo space of cars is rarely ever a strict box, and is normally one that curves
+  in places, along with other obstructing parts. After mindmapping some possible solutions and drawing up rough flowcharts I settled on a
+  fix.
+  
+  Solution: The idea would be to add a margin of error to the bounded box estimation, this way we are accounting for imperfections in the
+  shape of the cargo space. Deciding on the value for the margin of error was done by doing some research into the most common car shapes.
+  As such, 10cm was added to rigid furniture entries, and 5cm for flexible furniture pieces. The demo script created added these values, as
+  well as printing out the minimum size needed given the customer's furniture entry.
+
+  However, this did not work. Upon talking with the team, we collectively found that 'flexible' furniture was rarely ever a thing, so that
+  extra step of computation (adding different values for the margin of error based on if the product was flexible or not) was unnecessary.
+  Furthermore, the script simply printed the needed size for the furniture, it didn't find if the furniture would fit based on the car model
+  and make, which is what is needed.
+
+    So how do I deal with this new information? That my previous solution was incorrect.
+
+  I went back to the original app flowchart, and consulted with my other teammates. Isha had created a prototype for the front-end on Figma,
+  which I utilised to completely re-write the flowchart from scratch. This allowed me to make sure my other solutions, my other steps,
+  didn't have the same shortfall (unneccesary and not actually solving the issue). This allowed me to see exactly what the demo script
+  should be, as well as where other demo scripts were needed too. From this I created a new script, with inputs for the cargo space
+  dimensions (found in the data scraping script), inputs for the furniture as well as input for the type of furniture too. Along with this,
+  I scrapped the 10cm margin of error and applied a universal 5cm margin of error to the dimensions. Then I found the script so that it
+  would check not only volume, but also length, height, and width, and that all those values were smaller than the cargo space, in order to
+  return a Yes or a No, on whether the furniture would fit. This is all shown in the file 'FurnitureFitStep.md', attached in the repo. This
+  solves the issues that the previous demo script had. And for now, is a good solution to the overall issue of checking if the furniture
+  will fit.
+
+  Conclusion: in future, check that the overall picture of the program or process is sound and detailed, in order to prevent shortcomings
+  in future scripts and solutions in general.
+
+Problem 2: Priority ranking step/algo
+
+  One thing that had really interested me from the start was developing this ranking idea. Taking inspiration from ELO algos in chess and
+  from holding ourselves accountable for climate change, I knew I could come up with a novel process to carry this out. So the issue is, I
+  feel as though the ranking of eligible drivers on the page is important, as the customer is likely to pick the top option. Furthermore, I
+  think that a ranking based on proximity is too one-dimensional, other things to be considered are the emissions that the driver's car
+  gives off, and, the ratings of the driver. Each of these is too be discussed below within the solution paragraph.
+
+  Solution: To write this succinctly, I'll delve into each factor to be considered below. First is the proximity/distance. 
+    
+    Bolt is an example of a successful realisation of what we want to implement, they utilise Google Maps and Mapbox APIs. Drivers are
+    ranked based on their proximity to the rider and their ETA. The closer a driver is, the higher they are ranked. This is a good solution     for the issue as it lays out the idea of what could be implemented in the future, perhaps in deployment of the app, but at the moment       and with the current time frame, it is not feasible to actually build this idea.
+
+  Now moving to fuel emissions or carbon emissions.
+
+    I could implement a data scraping system that would find the emissions statistics on the driver’s car. After standardizing the metrics, 
+    we could calculate averages and carry out a simple ranking system, that put the cars with the least emissions at the top, and the most 
+    emissions at the bottom. The main issue here would be finding a website with the data available for every car, I think once again, it
+    is more feasible to leave it as a thought out process rather than a technically working solution for this factor. So we are done here.
+
+  Finally, we move to driver's reviews and ratings.
+
+    On deployment of the app, this would not be a possible factor due to the lack of data to effectively consider it. However, once the
+    data was collected we could follow as such. Use Laplace’s rule of succession to take into account the number of reviews as well as the
+    overall rating of the driver. This is leveraging Bayesian statistics to properly inform the customer of their expected utility gain by 
+    using Driver A over Driver B, I got this idea from a 3Blue1Brown video, and is tangentially related to chess ELO rankings (something I
+    was very interested in). Using these figures derived, again, simply rank the drivers from best to worst.
+
+  Once all of these are formed, and we have each eligible driver on a ranking from #1 to #x, where x is the number of eligible options for
+  drivers. We then assign a weighting to each factor, say 0.3 for rankings, 0.2 for emissions and 0.5 to proximity. Finally, ranking the
+  drivers with the lowest score (a driver who has is #1 for all factors would have a score of 3) at the top of the list and the highest
+  score at the bottom. This successfully ranks the drivers from top to bottom in a way that reinforces ease of use, our project missions
+  to make recommerce more appealing, and create a project that helps the environment.
+
+  Conclusion: make sure to do proper reading in order to allow you to explore your options when creating a process.
+
+These were the issues that cropped up whilst forming the PPTX. The goal now is to finalise all the formatting and the other teammates entries into the PPTX, and begin to create the video pitch along with the other mandatory components of the competition.
+
+Main problem:
+There were two of these, and discussed in detail above.
+
+Main takeaways:
+1. I successfully dealt with multiple issues as they came up, implementing novel ideas to solve them.
+2. I was able to take on board criticism on a solution, take a step back, re-inform myself and correct my solution.
+3. I was able to draw away two key points to bear in mind when pursuing future endeavours (under "Conclusion:" in each problem section).
+4. Keep moving forward, to secure the project before the deadline.
+
+
+
+
 
 
