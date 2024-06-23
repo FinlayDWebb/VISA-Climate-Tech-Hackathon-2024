@@ -144,8 +144,23 @@ Main takeaways:
 3. I was able to draw away two key points to bear in mind when pursuing future endeavours (under "Conclusion:" in each problem section).
 4. Keep moving forward, to secure the project before the deadline.
 
+--------------------------------------------------------------------------------
 
+Sunday 23rd June - 1/2
 
+Having got the powerpoint pitch completed, and working with Isha on the front-end Figma prototype (I designed the selecting driver page and the carbon tracking calculator page), the deadline was coming up (21st June). But the competition organisers pushed it back to the 1st of July; as they want us to look at the resources they uploaded in their full. These resources include a new API that can be used to contract payment data and the carbon emissions connected with that payment. As such, I have organised another team meeting where we will pitch our ideas of how to incorporate this new API in our already well established app. I will update this log later on after the meeting. 
+  Going back to what's already happened (the PPTX and the Figma prototype), the PPTX was a smooth process since the last log, I simply added some formatting and edited my teammates entries into the pitch slides. The Figma software was something I had never used before so it involved me doing some preliminary research into the tools and how to go about navigating it. I ended up designing two pages, as listed earlier. A problem I had found was not getting the navigation bar to stay at the bottom whilst the user scrolled, although I quickly fixed this issue. The end goal is to get the prototype to a stage where we can overlay it onto an iPhone screen and it replicate what the user would see from start to finish (login to completed order). I have utilised other websites such as a carbon footprint calculator into the prototype so that we can urge the customer to stay accountable. Other than this, there is not much to update before the meeting.
+
+Main problem: Navigating the app development software Figma, particularly issues within keeping buttons in their place whilst the user scrolls. Solution: Background research and asking my peers, helped me to understand the steps to properly fix a button whilst scrolling. Outcome: A good replication of what us (the team) want the app to look like.
+
+Main takeaways:
+1. I successfully learned and implemented basic Figma skills to help build a front-end prototype for our app AirRide
+2. I was able to coordinate with peers to get the powerpoint pitch finished before the initial deadline, this included delegating research to others.
+3. I smoothly took on board moved deadline and re-directed our efforts to be more ambitious, as well as organising a meeting to discuss my peers' thoughts on the new API.
+
+--------------------------------------------------------------------------------
+
+Sunday 23rd June - 2/2 (after meeting)
 
 
 
