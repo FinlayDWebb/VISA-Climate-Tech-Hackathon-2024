@@ -162,5 +162,13 @@ Main takeaways:
 
 Sunday 23rd June - 2/2 (after meeting)
 
+We discussed the new API resources that were given to us in the meeting, which help us keep track of carbon emissions. Deciding that (after reading the general chat) that we wouldn't get permission from the resource in time before the deadline. Also, we lack a back-end in the prototype app, it is very much an idea. So therefore, I decided to propose we instead just put an idea of how to use the API in developing the app fully, into the future forecast section of the slides. 
+  After discussing this, we talked about how we would go about doing the video pitch. Rbhu is creating a YouTube account for AirRide, and everyone else is sending me their pitches. Their individual sections will go over what they did in the powerpoint and in the project. I'll edit them all together into a coherent pitch. Including some public interview excerpts. As well as this I need to finish the prototype with Isha, I just let her know that I can take charge of the proposed section for API integration, and general formatting. Leaving her the payments page to design.
+
+Main takeaways:
+1. I successfully coordinated the team to discuss a new issue that arose (the API resource and extended deadline).
+2. Finish the front-end prototype with Isha, working on finding a place to let the customer use the API system (proposed), dimensions of each page and the top iPhone bar.
+3. Add the proposed system of utilising the API to the flowchart within the PPTX.
+4. Design a script for the video pitch and self-record my section, conduct and film public interviews, and edit it all together to create an overall pitch.
 
 
