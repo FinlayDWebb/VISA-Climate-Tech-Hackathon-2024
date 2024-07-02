@@ -171,4 +171,13 @@ Main takeaways:
 3. Add the proposed system of utilising the API to the flowchart within the PPTX.
 4. Design a script for the video pitch and self-record my section, conduct and film public interviews, and edit it all together to create an overall pitch.
 
+--------------------------------------------------------------------------------
+
+Tuesday 2nd July - 
+
+Yesterday was the deadline for the project, I stayed up all night editing the YouTube pitch and finalising the front-end prototype with Isha. The link to our YouTube is here: https://www.youtube.com/channel/UCiJpjKwdbX3vwUKWv3di7lg. Feel free to go have a look. I am happy to say that the entire project is now completed and to a good standard.
+
+The project was a great exercise in teamwork, learning new skills such as some data scraping in python, using Figma to build a front-end, and coordinating accross timezones too. In this blog/READme there have been a couple challenges that I have faced and dealt with. I think coming away from this, regardless of the result it has been a fun and informative process. The ways I have dealt with the problems will be carried forward for future similar projects and endeavours. And this whole thing definitely serves as a good foundational brick should I consider other Hackathons in the future. Thank you for reading this blog. 
+
+Finlay.
 
